@@ -2,3 +2,5 @@ node_modules
 .sass-cache
 dist
 .tmp
+#OSX
+.DS_Store
