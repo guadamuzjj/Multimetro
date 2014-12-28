@@ -14,6 +14,7 @@
 		AD0125371A50A5E200433744 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0125361A50A5E200433744 /* Images.xcassets */; };
 		AD01253A1A50A5E200433744 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0125381A50A5E200433744 /* LaunchScreen.xib */; };
 		AD0125461A50A5E200433744 /* MultimetroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0125451A50A5E200433744 /* MultimetroTests.m */; };
+		AD0125501A50AF2E00433744 /* LoopBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD01254F1A50AF2E00433744 /* LoopBack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		AD01253F1A50A5E200433744 /* MultimetroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultimetroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0125441A50A5E200433744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD0125451A50A5E200433744 /* MultimetroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultimetroTests.m; sourceTree = "<group>"; };
+		AD01254F1A50AF2E00433744 /* LoopBack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoopBack.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0125501A50AF2E00433744 /* LoopBack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		AD01251D1A50A5E200433744 = {
 			isa = PBXGroup;
 			children = (
+				AD0125511A50AF4500433744 /* Frameworks */,
 				AD0125281A50A5E200433744 /* Multimetro */,
 				AD0125421A50A5E200433744 /* MultimetroTests */,
 				AD0125271A50A5E200433744 /* Products */,
@@ -117,6 +121,15 @@
 				AD0125441A50A5E200433744 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD0125511A50AF4500433744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD01254F1A50AF2E00433744 /* LoopBack.framework */,
+			);
+			name = Frameworks;
+			path = Multimetro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Multimetro",
+				);
 				INFOPLIST_FILE = Multimetro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +372,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Multimetro",
+				);
 				INFOPLIST_FILE = Multimetro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
