@@ -14,7 +14,7 @@
 		AD0125371A50A5E200433744 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0125361A50A5E200433744 /* Images.xcassets */; };
 		AD01253A1A50A5E200433744 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0125381A50A5E200433744 /* LaunchScreen.xib */; };
 		AD0125461A50A5E200433744 /* MultimetroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0125451A50A5E200433744 /* MultimetroTests.m */; };
-		AD0125501A50AF2E00433744 /* LoopBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD01254F1A50AF2E00433744 /* LoopBack.framework */; };
+		AD0125501A50AF2E00433744 /* LoopBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD01254F1A50AF2E00433744 /* LoopBack.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
