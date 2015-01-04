@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P84-1p-NIW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,19 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-eO-DMX">
-                                <rect key="frame" x="176" y="466" width="105" height="30"/>
-                                <color key="backgroundColor" red="0.47895231030000002" green="1" blue="0.50432143240000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="aPE-eO-DMX" secondAttribute="height" multiplier="7:2" id="TZd-Yo-hAQ"/>
-                                </constraints>
-                                <state key="normal" title="Email">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="yTE-SO-o7e" kind="show" id="bat-SB-DgY"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join Us With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wb-Hf-fW3">
                                 <rect key="frame" x="241" y="398" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,6 +42,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="FVP-0A-9OL" kind="show" id="DU6-4d-xXJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-eO-DMX">
+                                <rect key="frame" x="183" y="466" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.47895231030000002" green="1" blue="0.50432143240000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yTE-SO-o7e" kind="show" id="bat-SB-DgY"/>
                                 </connections>
                             </button>
                         </subviews>
