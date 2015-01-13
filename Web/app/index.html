@@ -8,11 +8,11 @@
       <meta name="viewport" content="width=device-width">
       <!-- Place favicon.ico in the root directory -->
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
-      <link rel="stylesheet" href="styles/main.css">
       <script src="bower_components/modernizr/modernizr.js"></script>
 
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <header id="main-header">
@@ -42,10 +42,10 @@
           <div class="col-md-12">
             <h2>Infórmate y conoce las normas de educación vial.</h1>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-            <p>Conoce las normas de tránsito de nuestro país a través de esta aplicación además podrás ver su clasificación y el monto aplicado si infringes alguna de estas leyes.</p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+          <p>Conoce las normas de tránsito de nuestro país a través de esta aplicación además podrás ver su clasificación y el monto aplicado si infringes alguna de estas leyes.</p>
           </div>
         </div>
         <div class="row">
@@ -90,19 +90,14 @@
         g.src='//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-
-    <!-- build:js scripts/main.js -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--
     <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:js scripts/async-local-storage.js -->
     <script src="scripts/async.localStorage.js"></script>
     <script src="scripts/async.localStorage.examples.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:js scripts/fastclick.js -->
     <script src="scripts/fastclick.js"></script>
     <script src="scripts/fastclick.example.js"></script>
-    <!-- endbuild -->
+    -->
   </body>
 </html>
