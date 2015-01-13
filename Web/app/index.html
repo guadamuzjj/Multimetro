@@ -50,10 +50,12 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-            <div class="search-multas">
-              <label class="sr-only" for="search">Tu búsqueda</label>
-              <i class="fa fa-search fa-2x"></i><input type="text" required id="search" name="search" class="form-control input-lg" placeholder="Busca Ej: alcohol, casco">
-            </div>
+            <form action="." autocomplete="on" validate>
+              <div class="search-multas">
+                <label class="sr-only" for="search">Tu búsqueda</label>
+                <i class="fa fa-search fa-2x"></i><input type="text" pattern="[A-Za-z]+" required autofocus id="search" name="search" class="form-control input-lg" placeholder="Busca Ej: alcohol, casco">
+              </div>
+            </form>
           </div>
         </div>
       </div>
