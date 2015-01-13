@@ -1,9 +1,15 @@
+#NodeJS
 node_modules
+npm-debug.log
+
+#Grunt
 dist
 .tmp
 .sass-cache
+
+#Bower Components
 Web/app/bower_components
 test/bower_components
-npm-debug.log
+
 #OSX
 .DS_Store
