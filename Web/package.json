@@ -1,6 +1,12 @@
 {
   "name": "multimetro",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "AngularJS Client for multas-api",
+  "author": "Jonathan Guadamuz",
+  "contributors": [{
+    "name": "Oscar Cortez",
+    "email": "om.cortez.2010@gmail.com"
+  }],
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -33,9 +39,11 @@
     "grunt-webp": "~0.0.1",
     "grunt-modernizr": "~0.3.0",
     "grunt-autoshot": "~0.2.0",
-    "grunt-responsive-images": "~0.0.3"
+    "grunt-responsive-images": "~0.0.3",
+    "grunt-loopback-angular": "~1.1.0"
   },
   "engines": {
     "node": ">=0.8.0"
-  }
+  },
+  "licence": "MIT"
 }
