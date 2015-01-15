@@ -24,6 +24,7 @@ module.exports = function (grunt) {
         app: 'app',
         dist: 'dist'
     };
+    grunt.loadNpmTasks('grunt-loopback-angular');
 
     grunt.initConfig({
         yeoman: yeomanConfig,
@@ -51,6 +52,12 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
+            }
+        },
+        loopback_angular: {
+            options: {
+                input: '../../../Nodejs/multas-api/server/server.js',
+                output: 'app/scripts/lb-services.js'
             }
         },
         autoshot: {
@@ -494,6 +501,9 @@ module.exports = function (grunt) {
         'concurrent:server',
         'connect:livereload',
         'autoshot'
+    ]);
+    grunt.registerTask('loopback', [
+        'loopback_angular'
     ]);
     
 };
