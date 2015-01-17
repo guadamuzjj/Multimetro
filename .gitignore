@@ -8,8 +8,8 @@ dist
 .sass-cache
 
 #Bower Components
-Web/app/bower_components
-test/bower_components
+Web/app/bower_components/
+Web/test/bower_components/
 
 #OSX
 .DS_Store
