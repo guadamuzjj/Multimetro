@@ -1,5 +1,5 @@
 // create the module and name it multimetro
-var multimetro = angular.module('multimetro', ['ngRoute']);
+var multimetro = angular.module('multimetro', ['ngRoute', 'ngProgress']);
 
 // configure our routes
 multimetro.config(function($routeProvider) {
@@ -24,13 +24,19 @@ multimetro.config(function($routeProvider) {
         });
 });
 // create the controller and inject Angular's $scope
-multimetro.controller('mainController', function($scope) {
+multimetro.controller('mainController', function($scope, ngProgress) {
     // create a title to display in our view
     $scope.appName = 'Multimetro';
+    ngProgress.start(2);
+    ngProgress.complete()
 });
 
-multimetro.controller('aboutController', function($scope) {
+multimetro.controller('aboutController', function($scope, ngProgress) {
+    ngProgress.start(2);
+    ngProgress.complete()
 });
 
-multimetro.controller('contactController', function($scope) {
+multimetro.controller('contactController', function($scope, ngProgress) {
+    ngProgress.start(2);
+    ngProgress.complete()
 });
