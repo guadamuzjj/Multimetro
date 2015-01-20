@@ -15,7 +15,8 @@
 					<form action="." autocomplete="on" validate>
 						<div class="search-multas">
 							<label class="sr-only" for="search">Tu búsqueda</label>
-							<i class="fa fa-search fa-2x"></i><input type="text" pattern="[A-Za-z]+" required autofocus id="search" name="search" class="form-control input-lg" placeholder="Busca Ej: alcohol, casco">
+							<i class="fa fa-search fa-2x"></i>
+              <input ng-model="searchAPI" type="text" pattern="[A-Za-z]+" required autofocus id="search" name="search" class="form-control input-lg" placeholder="Busca Ej: alcohol, casco">
 						</div>
 					</form>
 				</div>
@@ -27,7 +28,7 @@
 	<div class="container">
 		<div class="row">
 			<center>
-				<h4>Tu Búsqueda: <strong>alcohol</strong></h4>
+				<h4>Tu Búsqueda: <strong>{{ searchAPI }}</strong></h4>
 			</center>
 			<div class="col-xs-12 col-md-4 col-md-offset-1">
 				<h3>Descripción</h3>
