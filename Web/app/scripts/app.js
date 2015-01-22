@@ -24,24 +24,24 @@ multimetro.config(function($routeProvider) {
         });
 });
 // create the controller and inject Angular's $scope
-multimetro.controller('mainController', ['$scope', 'ngProgresste', 'Multas', function($scope, ngProgress, Multas) {
+multimetro.controller('mainController', function($scope, ngProgress, Multa) {
     // create a title to display in our view
     $scope.appName = 'Multimetro';
     $scope.multas = [];
 
     function getMultas() {
-      Todo
+      Multa
         .find()
         .$promise
         .then(function(results) {
           $scope.multas = results;
         });
     }
-    getTodos();
+    getMultas();
 
     ngProgress.start(2);
     ngProgress.complete();
-}]);
+});
 
 multimetro.controller('aboutController', function($scope, ngProgress) {
     ngProgress.start(2);
