@@ -44,6 +44,11 @@ multimetro.controller('mainController', function($scope, ngProgress, Multa) {
         });
     }
     getMultas();
+    $scope.multas = Multa.find({
+      filter: { limit: 10 }
+    });
+    //test console
+    console.log($scope.multas);
 
     ngProgress.start(2);
     ngProgress.complete();
