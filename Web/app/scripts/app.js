@@ -23,6 +23,12 @@ multimetro.config(function($routeProvider) {
             controller  : 'contactController'
         });
 });
+multimetro.config(function(LoopBackResourceProvider) {
+
+  // Change the URL where to access the LoopBack REST API server
+  LoopBackResourceProvider.setUrlBase('http://localhost:3000/api/v1');
+});
+
 // create the controller and inject Angular's $scope
 multimetro.controller('mainController', function($scope, ngProgress, Multa) {
     // create a title to display in our view
