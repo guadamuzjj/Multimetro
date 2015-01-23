@@ -8,7 +8,7 @@ multimetro.config(function($routeProvider) {
         // route for the home page
         .when('/', {
             templateUrl : 'pages/home.html',
-            controller  : 'mainController'
+            controller  : 'mainController',
         })
 
         // route for the about page
@@ -24,9 +24,8 @@ multimetro.config(function($routeProvider) {
         });
 });
 multimetro.config(function(LoopBackResourceProvider) {
-
-  // Change the URL where to access the LoopBack REST API server
-  LoopBackResourceProvider.setUrlBase('http://localhost:3000/api/v1');
+    // Change the URL where to access the LoopBack REST API server
+    LoopBackResourceProvider.setUrlBase('http://localhost:3000/api/v1');
 });
 
 // create the controller and inject Angular's $scope
@@ -36,19 +35,16 @@ multimetro.controller('mainController', function($scope, ngProgress, Multa) {
     $scope.multas = [];
 
     function getMultas() {
-      Multa
-        .find()
-        .$promise
-        .then(function(results) {
-          $scope.multas = results;
+        $scope.multas = Multa.find({
+          filter: { 
+            where: {valor: $scope.multas.searchAPI},
+            limit: 10 
+          }
         });
     }
-    getMultas();
-    $scope.multas = Multa.find({
-      filter: { limit: 10 }
-    });
-    //test console
-    console.log($scope.multas);
+    //console.log($scope.multas);
+
+    //getMultas();
 
     ngProgress.start(2);
     ngProgress.complete();
